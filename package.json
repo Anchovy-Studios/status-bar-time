@@ -1,0 +1,65 @@
+{
+	"name": "status-bar-time",
+	"displayName": "Status Bar Time",
+	"description": "Display current date and time in the status bar",
+	"version": "1.0.0",
+	"publisher": "AnchovyStudios",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Anchovy-Studios/status-bar-time.git"
+	},
+	"keywords": [
+		"status-bar",
+		"date",
+		"time"
+	],
+	"author": {
+		"name": "Joshua Lauwrich Nandy",
+		"email": "joshua.lauwrich.98@gmail.com"
+	},
+	"icon": "ico.png",
+	"engines": {
+		"vscode": "^1.44.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "status-bar-time.toggle",
+				"title": "Show/hide status bar time"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "status-bar-time.toggle",
+				"key": "ctrl+shift+alt+s",
+				"mac": "ctrl+shift+alt+s"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.44.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.1",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"moment": "^2.24.0"
+	}
+}
