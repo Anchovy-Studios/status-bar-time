@@ -9,3 +9,7 @@ All notable changes to the "status-bar-time" extension will be documented in thi
 ## [1.0.1]
 
 - Add screenshot in README.md
+
+## [1.1.1]
+
+- Fix: time in 24 hour format

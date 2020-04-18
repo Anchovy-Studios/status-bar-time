@@ -17,7 +17,7 @@ function toggleImplementation() {
 	} else {
 		if (!item) item = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, -100);
 		item.show();
-		interval = setInterval(() => item.text = moment().format('Do MMMM YYYY, hh:mm:ss'), 1000);
+		interval = setInterval(() => item.text = moment().format('Do MMMM YYYY, HH:mm:ss'), 1000);
 	}
 	show = !show;
 }
