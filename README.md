@@ -8,6 +8,8 @@ This extension will automatically run and display the time. If you want to show/
 
 (Extension ini akan otomatis berjalan dan menampilkan waktu saat ini. Jika Anda ingin menampilkan/menghilangkan tampilan waktu tersebut, Anda bisa menggunakan perintah `Show/hide status bar time` atau dengan menekan tombol `ctrl + shift + alt + s`)
 
+![screenshot](ss.png)
+
 ## Change History
 [CHANGELOG](CHANGELOG)
 
