@@ -1,6 +1,12 @@
 const vscode = require("vscode");
 const moment = require("moment");
 
+function getDefaultLocale() {
+  return Intl.DateTimeFormat().resolvedOptions().locale;
+}
+
+moment.locale(getDefaultLocale());
+
 var interval, item;
 var show = false;
 
